@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
         if name != "Name" || password != "Password" {
             getAlert(title: "Invalid Login or Password",
                      text: "Please enter correct login and password")
+            delletePassword()
         }
     }
     
@@ -47,6 +48,10 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    private func delletePassword(){
+        passwordTextFild.text = ""
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcome = segue.destination as? WelcomeViewController else {return}
         welcome.name = nameTextField.text!
@@ -54,7 +59,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         nameTextField.text = ""
-        passwordTextFild.text = ""
+        delletePassword()
     }
     
 }
