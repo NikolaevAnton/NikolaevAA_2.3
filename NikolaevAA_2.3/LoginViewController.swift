@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         nameTextField.text = ""
         passwordTextFild.text = ""
-    
     }
     
     @IBAction func logInButton() {
@@ -48,6 +47,15 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcome = segue.destination as? WelcomeViewController else {return}
+        welcome.name = nameTextField.text!
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        nameTextField.text = ""
+        passwordTextFild.text = ""
+    }
     
 }
 

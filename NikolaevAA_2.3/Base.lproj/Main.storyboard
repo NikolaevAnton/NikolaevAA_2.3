@@ -121,6 +121,10 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButton" destination="Pjb-5k-Fih" eventType="touchUpInside" id="oSJ-8T-tjN"/>
+                                    <segue destination="6Xg-U8-YgE" kind="unwind" unwindAction="unwindFor:" id="rL9-Uh-Uyv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VaP-gS-uuB"/>
@@ -135,8 +139,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NZk-GQ-Rgy"/>
+                    <connections>
+                        <outlet property="helloLabel" destination="Gif-0Z-ZQl" id="8ZY-Ss-KbH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ar6-85-rnP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Xg-U8-YgE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="799" y="86"/>
         </scene>
