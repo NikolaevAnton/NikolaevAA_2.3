@@ -100,13 +100,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W7E-B8-A4O">
-                                <rect key="frame" x="157" y="179" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="4hb-Sd-qh4"/>
-                                    <constraint firstAttribute="height" constant="100" id="tov-Co-tou"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kym-Yy-YBL">
                                 <rect key="frame" x="159.5" y="691" width="95.5" height="37"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,16 +119,23 @@
                                     <segue destination="6Xg-U8-YgE" kind="unwind" unwindAction="unwindFor:" id="rL9-Uh-Uyv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\\\\\????||||" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-PG-oFX">
+                                <rect key="frame" x="98.5" y="219" width="217" height="55"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VaP-gS-uuB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VaP-gS-uuB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZWk-PG-oFX" secondAttribute="trailing" id="5eV-ob-wpw"/>
                             <constraint firstItem="Kym-Yy-YBL" firstAttribute="centerX" secondItem="dVP-eg-h82" secondAttribute="centerX" id="GW7-n8-nc3"/>
                             <constraint firstItem="Gif-0Z-ZQl" firstAttribute="top" secondItem="VaP-gS-uuB" secondAttribute="top" constant="100" id="Glt-Di-KpK"/>
                             <constraint firstItem="Gif-0Z-ZQl" firstAttribute="centerX" secondItem="dVP-eg-h82" secondAttribute="centerX" id="Hfh-Ru-FnF"/>
+                            <constraint firstItem="ZWk-PG-oFX" firstAttribute="centerX" secondItem="dVP-eg-h82" secondAttribute="centerX" id="JRC-od-Jrc"/>
                             <constraint firstItem="VaP-gS-uuB" firstAttribute="bottom" secondItem="Kym-Yy-YBL" secondAttribute="bottom" constant="80" id="Mj5-p7-YCw"/>
-                            <constraint firstItem="W7E-B8-A4O" firstAttribute="top" secondItem="Gif-0Z-ZQl" secondAttribute="bottom" constant="50" id="Oon-Db-rsa"/>
-                            <constraint firstItem="W7E-B8-A4O" firstAttribute="centerX" secondItem="dVP-eg-h82" secondAttribute="centerX" id="pl3-Kb-Fh7"/>
+                            <constraint firstItem="ZWk-PG-oFX" firstAttribute="top" secondItem="Gif-0Z-ZQl" secondAttribute="bottom" constant="90" id="iOL-1g-ubI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NZk-GQ-Rgy"/>

@@ -8,6 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
 
     @IBOutlet var nameTextField: UITextField!
     
@@ -61,6 +62,20 @@ class LoginViewController: UIViewController {
         nameTextField.text = ""
         delletePassword()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        //passwordTextFild.addTarget(self, action: #selector(changePassword), for: .allTouchEvents)
+        
+        
+        
+    }
+    
+    @objc func changePassword(){
+        print("changePassword")
+        
+    }
+    
     
 }
 
